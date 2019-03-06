@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Aluisyo Wallet
+Comment=Aluisyo GUI Wallet
+Exec=AluisyoGUI
+Terminal=false
+Type=Application
+Icon=aluisyo
+MimeType=x-scheme-handler/aluisyowallet;
+Categories=Office;Finance;Cryptocurrency
