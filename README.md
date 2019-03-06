@@ -54,11 +54,11 @@ If the build is successful the binaries will be in the bin folder.
 ##### Building
 
 - From the start menu, open 'x64 Native Tools Command Prompt for vs2017' or run "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsMSBuildCmd.bat" from any command prompt.
-- Edit the CMakeLists.txt file and set the path to QT cmake folder. For exampple: set(CMAKE_PREFIX_PATH "C:\\Qt\\5.11.0\\msvc2017_64\\lib\\cmake\\").
+- Edit the CMakeLists.txt file and set the path to QT cmake folder. For example: set(CMAKE_PREFIX_PATH "C:\\Qt\\5.11.0\\msvc2017_64\\lib\\cmake\\").
 - `git clone https://github.com/aluisyonetwork/aluisyo-core`
 - `git clone https://github.com/aluisyonetwork/aluisyo-wallet`
 - Copy the contents of the aluisyo-core folder into aluisyo-wallet\cryptonote
-- `cd aluisyo-wallet`
+- `cd aluisyo-gui-wallet`
 - `mkdir build`
 - `cd build`
 - `cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..` (Or your boost installed dir.)
