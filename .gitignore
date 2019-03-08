@@ -4,5 +4,8 @@ nbproject/
 uncrustify.cfg
 *.o
 *.a
+CMakeFiles
+cryptonote/
+CMakeLists.txt
 
 
