@@ -2,14 +2,43 @@
 Latest Release: v0.0.2
 Maintained by Aluisyo.
 
+## Warning: This is Highly Experimental for testing purposes Only, Use at own Risk!
+
 ## Information
-Aluisyo is a free open source privacy protected peer-to-peer digital cash system that is completely decentralized, without the need for a central server or trusted parties. Users hold the crypto keys to their own money and transact directly with each other, with the help of a P2P network to check for double-spending. Aluisyo has a decentralized blockchain banking in its core and instant untraceable crypto messages that can be decrypted with recipients private key.
+### Aluisyo
+
+The Future Of Blockchain Banking
+
+Aluisyo is a decentralized cryptocurrency based on cryptonote with blockchain banking features and secure messaging.
+Aluisyo is a fairly launched coin without any premine, ico or dev fee.
+
+- Coin Name: Aluisyo
+- Genesis Date: 25-02-19
+- Ticker: ANX
+- Address Prefix: aNX
+- POW Algo: Cryptonight Original
+- Max Supply: 200milion
+- Block Reward: smoothly increasing, starting from 5 all the way up-to 50
+- Ports:
+- P2P: 18001
+- RPC: 19000
+
 
 ## Resources
 - Web: [aluisyo.network](https://aluisyo.network/)
 - GitHub: [https://github.com/aluisyonetwork/aluisyo-core](https://github.com/aluisyonetwork/aluisyo-core)
-- Discord: [https://discord.aluisyo.network](https://discord.aluisyo.network)
 - Paperwallet: [https://paperwallet.aluisyo.network/](https://paperwallet.aluisyo.network/)
+- Discord: [https://discord.gg/rbyNZRz](https://discord.gg/rbyNZRz)
+- Our BitcoinTalk: https://bitcointalk.org/index.php?topic=5114934
+- Our Telegram: https://t.me/joinchat/I5RElgnalLDhSHTQBjSluA
+
+### [Block Explorers] 
+- https://explorer.aluisyo.network/
+- https://node.aluisyo.network/
+
+### [Pools] 
+- https://cnpool.cc/anx
+- https://coinsforhash.com/aluisyo/
 
 ## Compiling Aluisyo from source
 
@@ -67,4 +96,4 @@ If the build is successful the binaries will be in the bin folder.
 If the build is successful the binaries will be in the Release folder.
 
 #### Special Thanks
-Special thanks goes out to the developers from Cryptonote, Bytecoin, Monero, Forknote, TurtleCoin, and Masari.
+Special thanks goes out to the developers from Cryptonote, Bytecoin, Monero, Forknote, TurtleCoin, Masari, The Circle Team
