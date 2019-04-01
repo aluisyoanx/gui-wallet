@@ -2,22 +2,26 @@
 Latest Release: v0.0.2
 Maintained by Aluisyo.
 
-## Warning: This is Highly Experimental for testing purposes Only, Use at own Risk!
+## Warning: This is Highly Experimental for testing purposes, Use at own Risk!
 
 ## Information
 ### Aluisyo
 
 The Future Of Blockchain Banking
 
-Aluisyo is a decentralized cryptocurrency based on cryptonote with blockchain banking features and secure messaging.
+Aluisyo is a decentralized cryptocurrency based on cryptonote with enabled blockchain banking features and secure messaging.
+
 Aluisyo is a fairly launched coin without any premine, ico or dev fee.
+
+Aluisyo is a complete Solution for your Payments, messaging and banking needs, it provides instant privacy protected transactions and untraceable/self-destructive encrypted messaging transfers with extremely low processing fees in a decentralized peer-to-peer network.
 
 - Coin Name: Aluisyo
 - Genesis Date: 25-02-19
 - Ticker: ANX
 - Address Prefix: aNX
-- POW Algo: Cryptonight Original
-- Max Supply: 200milion
+- POW Algo: Cryptonight Fast
+- Max Supply: 200 million
+- Block Time: 120 seconds
 - Block Reward: smoothly increasing, starting from 5 all the way up-to 50
 - Ports:
 - P2P: 18001
@@ -27,17 +31,19 @@ Aluisyo is a fairly launched coin without any premine, ico or dev fee.
 ## Resources
 - Web: [aluisyo.network](https://aluisyo.network/)
 - GitHub: [https://github.com/aluisyonetwork/aluisyo-core](https://github.com/aluisyonetwork/aluisyo-core)
-- Paperwallet: [https://paperwallet.aluisyo.network/](https://paperwallet.aluisyo.network/)
 - Discord: [https://discord.gg/rbyNZRz](https://discord.gg/rbyNZRz)
 - Our BitcoinTalk: https://bitcointalk.org/index.php?topic=5114934
 - Our Telegram: https://t.me/joinchat/I5RElgnalLDhSHTQBjSluA
+- Our Twitter: https://www.twitter.com/aluisyonetwork
 
-### [Block Explorers] 
+### [Block Explorer] 
 - https://explorer.aluisyo.network/
-- https://node.aluisyo.network/
+
+### [Remote Node]
+- node.aluisyo.network:19000
 
 ### [Pools] 
-- https://cnpool.cc/anx
+- https://pool.aluisyo.network
 - https://coinsforhash.com/aluisyo/
 
 ## Compiling Aluisyo from source
