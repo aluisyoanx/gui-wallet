@@ -20,8 +20,8 @@ Aluisyo is a complete Solution for your Payments, messaging and banking needs, i
 - Ticker: ANX
 - Address Prefix: aNX
 - POW Algo: Cryptonight Fast
-- Max Supply: 200 million
 - Block Time: 120 seconds
+- Max Supply: 200milion
 - Block Reward: smoothly increasing, starting from 5 all the way up-to 50
 - Ports:
 - P2P: 18001
