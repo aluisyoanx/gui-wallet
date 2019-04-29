@@ -21,7 +21,7 @@ Aluisyo is a complete Solution for your Payments, messaging and banking needs, i
 - Address Prefix: aNX
 - POW Algo: Cryptonight Fast
 - Block Time: 120 seconds
-- Max Supply: 200milion
+- Max Supply: 200 million
 - Block Reward: smoothly increasing, starting from 5 all the way up-to 50
 - Ports:
 - P2P: 18001
@@ -30,11 +30,11 @@ Aluisyo is a complete Solution for your Payments, messaging and banking needs, i
 
 ## Resources
 - Web: [aluisyo.network](https://aluisyo.network/)
-- GitHub: [https://github.com/aluisyonetwork/aluisyo-core](https://github.com/aluisyonetwork/aluisyo-core)
+- GitHub: [https://github.com/aluisyoanx/aluisyo-core](https://github.com/aluisyoanx/aluisyo-core)
 - Discord: [https://discord.gg/rbyNZRz](https://discord.gg/rbyNZRz)
 - Our BitcoinTalk: https://bitcointalk.org/index.php?topic=5114934
 - Our Telegram: https://t.me/joinchat/I5RElgnalLDhSHTQBjSluA
-- Our Twitter: https://www.twitter.com/aluisyonetwork
+- Our Twitter: https://www.twitter.com/aluisyoanx
 
 ### [Block Explorer] 
 - https://explorer.aluisyo.network/
@@ -67,9 +67,9 @@ Alternatively, it may be possible to install them using a package manager.
 To acquire the source via git and build the release version, run the following commands:
 
 - `cd ~`
-- `git clone https://github.com/aluisyonetwork/aluisyo-wallet`
+- `git clone https://github.com/aluisyoanx/aluisyo-wallet`
 - `cd aluisyo-wallet`
-- `git clone https://github.com/aluisyonetwork/aluisyo-core.git cryptonote`
+- `git clone https://github.com/aluisyoanx/aluisyo-core.git cryptonote`
 - `make build-release`
 - `mkdir bin && mv build/release/Aluisyo-GUI bin/`
 - `make clean`
@@ -90,8 +90,8 @@ If the build is successful the binaries will be in the bin folder.
 
 - From the start menu, open 'x64 Native Tools Command Prompt for vs2017' or run "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsMSBuildCmd.bat" from any command prompt.
 - Edit the CMakeLists.txt file and set the path to QT cmake folder. For example: set(CMAKE_PREFIX_PATH "C:\\Qt\\5.11.0\\msvc2017_64\\lib\\cmake\\").
-- `git clone https://github.com/aluisyonetwork/aluisyo-core`
-- `git clone https://github.com/aluisyonetwork/aluisyo-wallet`
+- `git clone https://github.com/aluisyoanx/aluisyo-core`
+- `git clone https://github.com/aluisyoanx/aluisyo-wallet`
 - Copy the contents of the aluisyo-core folder into aluisyo-wallet\cryptonote
 - `cd aluisyo-gui-wallet`
 - `mkdir build`
