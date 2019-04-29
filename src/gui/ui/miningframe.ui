@@ -250,7 +250,7 @@ border-right: 0px;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: #222; background-color: blue; border-top: 3px solid blue;
+       <string notr="true">color: #222; background-color: white; border-top: 3px solid white;
 border-right: 0px;</string>
       </property>
       <property name="text">
@@ -314,7 +314,7 @@ border-right: 0px;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: #ddd; background-color: #333; border-top: 3px solid blue;</string>
+       <string notr="true">color: #ddd; background-color: #333; border-top: 3px solid white;</string>
       </property>
       <property name="text">
        <string>BACK</string>

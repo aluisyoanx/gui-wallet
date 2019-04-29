@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Aluisyo Wallet
-Comment=Aluisyo GUI Wallet
+Comment=Aluisyo Wallet
 Exec=AluisyoGUI
 Terminal=false
 Type=Application

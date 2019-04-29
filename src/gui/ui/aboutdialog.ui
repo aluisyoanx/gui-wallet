@@ -32,7 +32,7 @@
    <string>About %1</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: #282d31; border-right: 4px solid blue;</string>
+   <string notr="true">background-color: #282d31; border-right: 4px solid white;</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
    <item>
@@ -69,7 +69,7 @@ border-right: 0px;
 font-size: 13px;</string>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Version %1&lt;/p&gt;&lt;p&gt;Aluisyo is a decentralized cryptocurrency based on cryptonote with enabled Blockchain Banking. Aluisyo is a fairly launched coin without any premine, ico or dev fee..&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffa500;&quot;&gt;http://opensource.org/licenses/MIT&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://aluisyo.network/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffa500;&quot;&gt;https://aluisyo.network/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Version %1&lt;/p&gt;&lt;p&gt;Aluisyo is a decentralized cryptocurrency based on the cryptonote protocol. Aluisyo is the complete solution for your blockchain Banking, Payment, and Messaging needs. Aluisyo allows you to earn interest from depositing ANX into your Block-Length-Interest account. It also provides instant privacy protected peer-to-peer transactions as well as untraceable/self-destructive encrypted messaging, with extremely low processing fees in a decentralized network.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffffff;&quot;&gt;http://opensource.org/licenses/MIT&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://aluisyo.network/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#ffffff;&quot;&gt;https://aluisyo.network/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="textFormat">
        <enum>Qt::RichText</enum>
@@ -81,7 +81,7 @@ font-size: 13px;</string>
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="m_closeButton">
+     <widget class="QPushButton" name="m_okButton">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -97,12 +97,12 @@ font-size: 13px;</string>
        </size>
       </property>
       <property name="font">
-       <font>
-        <pointsize>-1</pointsize>
-       </font>
+       <font/>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: blue; background-color: #1; border: 1px solid blue; font-size: 16px;</string>
+       <string notr="true">QPushButton#m_okButton {color: white; background-color: #1; border: 1px solid white; font-size: 16px;}
+
+QPushButton#m_okButton:hover {color: white; background-color: #1; border: 2px solid white; font-size: 16px;}</string>
       </property>
       <property name="text">
        <string>CLOSE</string>
@@ -141,7 +141,7 @@ font-size: 20px;</string>
  <resources/>
  <connections>
   <connection>
-   <sender>m_closeButton</sender>
+   <sender>m_okButton</sender>
    <signal>clicked()</signal>
    <receiver>AboutDialog</receiver>
    <slot>accept()</slot>

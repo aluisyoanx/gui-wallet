@@ -10,7 +10,7 @@ WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
 OUTPUT_VARIABLE GIT_REVISION)
 
 set(CRYPTONOTE_LIB cryptonote)
-set(CMAKE_PREFIX_PATH "C:\\Qt\\5.11.0\\msvc2017_64\\lib\\cmake\\")
+set(CMAKE_PREFIX_PATH "C:\\Qt\\Qt5.11.0\\5.11.0\\msvc2017_64\\lib\\cmake\\")
 
 include_directories(${CMAKE_BINARY_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}
@@ -73,16 +73,17 @@ set(CRYPTONOTE_SOURCES
   cryptonote/src/Common/StringOutputStream.cpp
   cryptonote/src/Common/StringView.cpp
   cryptonote/src/Common/VectorOutputStream.cpp
-  cryptonote/src/crypto/chacha.c
-  cryptonote/src/crypto/crypto-ops-data.c
-  cryptonote/src/crypto/crypto-ops.c
-  cryptonote/src/crypto/crypto.cpp
-  cryptonote/src/crypto/hash.c
-  cryptonote/src/crypto/keccak.c
-  cryptonote/src/crypto/random.c
-  cryptonote/src/crypto/tree-hash.c
   cryptonote/src/crypto/aux_hash.c 
-  cryptonote/src/crypto/cryptonight.cpp 
+  cryptonote/src/crypto/chacha.c 
+  cryptonote/src/crypto/chacha8.c 
+  cryptonote/src/crypto/crypto-ops-data.c 
+  cryptonote/src/crypto/crypto-ops.c 
+  cryptonote/src/crypto/crypto.cpp 
+  cryptonote/src/crypto/hash.c 
+  cryptonote/src/crypto/cryptonight.cpp
+  cryptonote/src/crypto/keccak.c 
+  cryptonote/src/crypto/random.c 
+  cryptonote/src/crypto/tree-hash.c 
   cryptonote/src/CryptoNoteCore/BlockchainIndices.cpp
   cryptonote/src/CryptoNoteCore/BlockchainMessages.cpp
   cryptonote/src/CryptoNoteCore/BlockIndex.cpp
@@ -197,11 +198,11 @@ elseif (UNIX)
     file(GLOB_RECURSE OBJC_SOURCES src/*.mm)
     set(SOURCES ${SOURCES} ${OBJC_SOURCES})
     set(PLATFORM_DIR OSX)
-    set(MACOSX_BUNDLE_INFO_STRING "Cryptonote GUI wallet")
-    set(MACOSX_BUNDLE_LONG_VERSION_STRING "${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
-    set(MACOSX_BUNDLE_BUNDLE_NAME CryptonoteWallet)
-    set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
-    set(MACOSX_BUNDLE_BUNDLE_VERSION "$${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
+    set(MACOSX_BUNDLE_BUNDLE_NAME ${CN_PROJECT_NAME})
+    set(MACOSX_BUNDLE_INFO_STRING ${CN_VERSION})
+    set(MACOSX_BUNDLE_LONG_VERSION_STRING ${CN_VERSION})
+    set(MACOSX_BUNDLE_SHORT_VERSION_STRING ${CN_VERSION})
+    set(MACOSX_BUNDLE_BUNDLE_VERSION ${CN_VERSION})
 
     find_package(Qt5PrintSupport REQUIRED)
 
@@ -261,8 +262,8 @@ target_link_libraries(${PROJECT_NAME} Qt5::Network)
 
 set(CPACK_PACKAGE_NAME ${CN_PROJECT_NAME})
 set(CPACK_PACKAGE_VERSION ${CN_VERSION})
-set(CPACK_PACKAGE_VENDOR "Aluisyo Network")
-set(CPACK_PACKAGE_CONTACT "https://github.com/aluisyonetwork")
+set(CPACK_PACKAGE_VENDOR "Aluisyo")
+set(CPACK_PACKAGE_CONTACT "https://github.com/aluisyoanx")
 set(CPACK_STRIP_FILES ON)
 if (APPLE)
     set(CPACK_GENERATOR DragNDrop)
@@ -282,16 +283,18 @@ elseif (UNIX)
         set(CPACK_GENERATOR DEB)
         set(CPACK_DEBIAN_PACKAGE_NAME ${CPACK_PACKAGE_NAME})
         set(CPACK_SYSTEM_NAME amd64)
-        set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <suzyoeliasnyirenda@gmail.com>")
+        set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <anx@aluisyo.network>")
         set(CPACK_DEBIAN_PACKAGE_SECTION Office)
         set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
         set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "Aluisyo GUI Wallet
- Aluisyo is a decentrilized privacy protected peer-to-peer
- cryptocurrency and untraceable encrypted messaging system. Aluisyo is
- open-source; its design is public, nobody owns or controls Aluisyo and
- everyone can take part.
+ Aluisyo is a decentralized cryptocurrency based on cryptonote
+ with enabled blockchain banking features and secure messaging.
+ Aluisyo is a complete Solution for your Payments, messaging and
+ banking needs, it provides instant privacy protected transactions 
+ and untraceable/self-destructive encrypted messaging transfers with
+ extremely low processing fees in a decentralized peer-to-peer network.
  .
- Features of the Aluisyo wallet listed bellow:
+ Features of the Aluisyo wallet:
  * Classic Bitcoin alike appearance in CryptoNote based cryptocurrency,
    made with QT and open-source.
  * Instant anonymous ANX transfers and transfers notifications
@@ -310,13 +313,15 @@ set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSIO
         set(CPACK_RPM_PACKAGE_GROUP Office)
         set(CPACK_RPM_PACKAGE_REQUIRES "qt5-qtbase >= 5.3.2, qt5-qtbase-gui >= 5.3.2")
         set(CPACK_RPM_PACKAGE_SUMMARY "Aluisyo GUI Wallet")
-        set(CPACK_RPM_PACKAGE_DESCRIPTION "Open-source Aluisyo GUI wallet
- Aluisyo is a decentrilized privacy protected peer-to-peer
- cryptocurrency and untraceable encrypted messaging system. Aluisyo is
- open-source; its design is public, nobody owns or controls Aluisyo and
- everyone can take part.
+        set(CPACK_RPM_PACKAGE_DESCRIPTION "Aluisyo GUI wallet
+ Aluisyo is a decentralized cryptocurrency based on cryptonote
+ with enabled blockchain banking features and secure messaging.
+ Aluisyo is a complete Solution for your Payments, messaging and
+ banking needs, it provides instant privacy protected transactions 
+ and untraceable/self-destructive encrypted messaging transfers with
+ extremely low processing fees in a decentralized peer-to-peer network.
 
- Features of the Aluisyo wallet listed bellow:
+ Features of the Aluisyo Wallet:
  *Classic Bitcoin alike appearance in CryptoNote based cryptocurrency,
     made with QT and open-source.
  *Instant anonymous Aluisyo transfers and transfers notifications

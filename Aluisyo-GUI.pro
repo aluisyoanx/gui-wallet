@@ -127,11 +127,11 @@ HEADERS += libqrencode/bitstream.h \
            libqrencode/rscode.h \
            libqrencode/split.h \
            src/AliasProvider.h \
+           src/AddressProvider.h \
            src/CommandLineParser.h \
            src/CryptoNoteWrapper.h \
            src/CurrencyAdapter.h \
            src/LoggerAdapter.h \
-           src/Miner.h \
            src/miniupnpcstrings.h \
            src/NodeAdapter.h \
            src/Settings.h \
@@ -175,11 +175,12 @@ HEADERS += libqrencode/bitstream.h \
            src/gui/MessageDetailsDialog.h \
            src/gui/MessagesFrame.h \
            src/gui/MessagesModel.h \           
-           src/gui/MiningFrame.h \
            src/gui/WelcomeFrame.h \
            src/gui/NewAddressDialog.h \
            src/gui/NewPasswordDialog.h \
            src/gui/NewPoolDialog.h \
+           src/gui/NewNodeDialog.h \ 
+           src/gui/NodeModel.h \                 
            src/gui/OverviewFrame.h \
            src/gui/PasswordDialog.h \
            src/gui/PoolModel.h \
@@ -252,8 +253,12 @@ HEADERS += libqrencode/bitstream.h \
            cryptonote/src/Common/Varint.h \
            cryptonote/src/Common/VectorOutputStream.h \
            cryptonote/src/crypto/aux_hash.h \
-           cryptonote/src/crypto/blake256.h \
            cryptonote/src/crypto/chacha.h \
+           cryptonote/src/crypto/chacha8.h \    
+           cryptonote/src/crypto/cn_aux.hpp \
+           cryptonote/src/crypto/coin_algos.hpp \
+           cryptonote/src/crypto/soft_aes.hpp \           
+           cryptonote/src/crypto/cryptonight.hpp \
            cryptonote/src/crypto/crypto-ops.h \
            cryptonote/src/crypto/crypto.h \
            cryptonote/src/crypto/generic-ops.h \
@@ -290,7 +295,6 @@ HEADERS += libqrencode/bitstream.h \
            cryptonote/src/CryptoNoteCore/ITransactionValidator.h \
            cryptonote/src/CryptoNoteCore/ITxPoolObserver.h \
            cryptonote/src/CryptoNoteCore/MessageQueue.h \
-           cryptonote/src/CryptoNoteCore/Miner.h \
            cryptonote/src/CryptoNoteCore/MinerConfig.h \
            cryptonote/src/CryptoNoteCore/OnceInInterval.h \
            cryptonote/src/CryptoNoteCore/SwappedMap.h \
@@ -325,7 +329,6 @@ HEADERS += libqrencode/bitstream.h \
            cryptonote/src/Logging/LoggerRef.h \
            cryptonote/src/Logging/StreamLogger.h \
            cryptonote/src/Miner/BlockchainMonitor.h \
-           cryptonote/src/Miner/Miner.h \
            cryptonote/src/Miner/MinerEvent.h \
            cryptonote/src/Miner/MinerManager.h \
            cryptonote/src/Miner/MiningConfig.h \
@@ -556,7 +559,7 @@ HEADERS += libqrencode/bitstream.h \
            src/gui/ui/importsecretkeys.h \
            src/gui/importsecretkeys.h \
            src/gui/importseed.h \
-           src/gui/nodesettings.h \
+           src/gui/NodeSettings.h \
            src/gui/transactionconfirmation.h \     
            src/gui/ShowQRCode.h \                
 
@@ -571,12 +574,12 @@ SOURCES += libqrencode/bitstream.c \
            libqrencode/rscode.c \
            libqrencode/split.c \
            src/AliasProvider.cpp \
+           src/AddressProvider.cpp \
            src/CommandLineParser.cpp \
            src/CryptoNoteWrapper.cpp \
            src/CurrencyAdapter.cpp \
            src/LoggerAdapter.cpp \
            src/main.cpp \
-           src/Miner.cpp \
            src/NodeAdapter.cpp \
            src/Settings.cpp \
            src/SignalHandler.cpp \
@@ -621,11 +624,12 @@ SOURCES += libqrencode/bitstream.c \
            src/gui/MessageDetailsDialog.cpp \
            src/gui/MessagesFrame.cpp \
            src/gui/MessagesModel.cpp \
-           src/gui/MiningFrame.cpp \
            src/gui/WelcomeFrame.cpp \    
            src/gui/NewAddressDialog.cpp \
            src/gui/NewPasswordDialog.cpp \
            src/gui/NewPoolDialog.cpp \
+           src/gui/NewNodeDialog.cpp \ 
+           src/gui/NodeModel.cpp \                        
            src/gui/OverviewFrame.cpp \
            src/gui/PasswordDialog.cpp \
            src/gui/PoolModel.cpp \
@@ -694,18 +698,15 @@ SOURCES += libqrencode/bitstream.c \
            cryptonote/src/ConnectivityTool/ConnectivityTool.cpp \
            cryptonote/src/crypto/aux_hash.c \
            cryptonote/src/crypto/chacha.c \
+           cryptonote/src/crypto/chacha8.c \
            cryptonote/src/crypto/crypto-ops-data.c \
            cryptonote/src/crypto/crypto-ops.c \
            cryptonote/src/crypto/crypto.cpp \
            cryptonote/src/crypto/hash.c \
-           cryptonote/src/crypto/cryptonight.cpp \           
-           cryptonote/src/crypto/cryptonight.hpp \                      
+           cryptonote/src/crypto/cryptonight.cpp \                                
            cryptonote/src/crypto/keccak.c \
            cryptonote/src/crypto/random.c \
-           cryptonote/src/crypto/tree-hash.c \
-           cryptonote/src/crypto/coin_algos.hpp \           
-           cryptonote/src/crypto/cn_aux.hpp \           
-           cryptonote/src/crypto/soft-aes.hpp \
+           cryptonote/src/crypto/tree-hash.c \                  
            cryptonote/src/CryptoNoteCore/Account.cpp \
            cryptonote/src/CryptoNoteCore/Blockchain.cpp \
            cryptonote/src/CryptoNoteCore/BlockchainIndices.cpp \
@@ -725,7 +726,6 @@ SOURCES += libqrencode/bitstream.c \
            cryptonote/src/CryptoNoteCore/Difficulty.cpp \
            cryptonote/src/CryptoNoteCore/IBlock.cpp \
            cryptonote/src/CryptoNoteCore/ITimeProvider.cpp \
-           cryptonote/src/CryptoNoteCore/Miner.cpp \
            cryptonote/src/CryptoNoteCore/MinerConfig.cpp \
            cryptonote/src/CryptoNoteCore/SwappedMap.cpp \
            cryptonote/src/CryptoNoteCore/SwappedVector.cpp \
@@ -756,7 +756,6 @@ SOURCES += libqrencode/bitstream.c \
            cryptonote/src/Logging/StreamLogger.cpp \
            cryptonote/src/Miner/BlockchainMonitor.cpp \
            cryptonote/src/Miner/main.cpp \
-           cryptonote/src/Miner/Miner.cpp \
            cryptonote/src/Miner/MinerManager.cpp \
            cryptonote/src/Miner/MiningConfig.cpp \
            cryptonote/src/NodeRpcProxy/NodeErrors.cpp \
@@ -1031,7 +1030,7 @@ SOURCES += libqrencode/bitstream.c \
            src/gui/ui/importsecretkeys.cpp \
            src/gui/importsecretkeys.cpp \
            src/gui/importseed.cpp \
-           src/gui/nodesettings.cpp \
+           src/gui/NodeSettings.cpp \
            src/gui/transactionconfirmation.cpp 
            src/gui/ShowQRCode.cpp \                           
 
@@ -1049,7 +1048,6 @@ FORMS +=    src/gui/ui/aboutdialog.ui \
             src/gui/ui/messageaddressframe.ui \
             src/gui/ui/messagedetailsdialog.ui \
             src/gui/ui/messagesframe.ui \
-            src/gui/ui/miningframe.ui \
             src/gui/ui/welcomeframe.ui \            
             src/gui/ui/newaddressdialog.ui \
             src/gui/ui/newpassworddialog.ui \

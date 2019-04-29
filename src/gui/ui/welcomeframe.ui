@@ -69,7 +69,7 @@ border: 0px; background-color: #212529;</string>
        <string notr="true">color: #ddd; background: transparent;</string>
       </property>
       <property name="text">
-       <string>WELCOME TO ALUISYO GUI WALLET</string>
+       <string>WELCOME TO ALUISYO WALLET</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -90,7 +90,7 @@ border: 0px; background-color: #212529;</string>
       <widget class="QLabel" name="label_3">
        <property name="geometry">
         <rect>
-         <x>345</x>
+         <x>410</x>
          <y>140</y>
          <width>401</width>
          <height>20</height>
@@ -106,13 +106,13 @@ border: 0px; background-color: #212529;</string>
 font-size: 15px;</string>
        </property>
        <property name="text">
-        <string>■ Aluisyo is a blockchain bank.</string>
+        <string>■  Aluisyo is a blockchain bank.</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_5">
        <property name="geometry">
         <rect>
-         <x>345</x>
+         <x>410</x>
          <y>190</y>
          <width>401</width>
          <height>20</height>
@@ -128,15 +128,15 @@ font-size: 15px;</string>
 font-size: 15px;</string>
        </property>
        <property name="text">
-        <string>■  Aluisyo is free and open source.</string>
+        <string>■  Aluisyo Wallet is free and open-source.</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_8">
        <property name="geometry">
         <rect>
-         <x>345</x>
+         <x>410</x>
          <y>240</y>
-         <width>465</width>
+         <width>401</width>
          <height>20</height>
         </rect>
        </property>
@@ -150,13 +150,13 @@ font-size: 15px;</string>
 font-size: 15px;</string>
        </property>
        <property name="text">
-        <string>■  This wallet allows you to access all the banking features and services.</string>
+        <string>■  The wallet allows access to all Aluisyo services.</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_9">
        <property name="geometry">
         <rect>
-         <x>345</x>
+         <x>410</x>
          <y>290</y>
          <width>401</width>
          <height>20</height>
@@ -172,7 +172,7 @@ font-size: 15px;</string>
 font-size: 15px;</string>
        </property>
        <property name="text">
-        <string>■  You have complete control to your keys and funds.</string>
+        <string>■  You control the private keys to your funds.</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_10">
@@ -215,7 +215,9 @@ font-size: 20px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: blue; background-color: #1; border: 1px solid blue; font-size: 16px;</string>
+        <string notr="true">QPushButton#next1 {color: white; background-color: #1; border: 1px solid white; font-size: 16px;}
+
+QPushButton#next1:hover {color: white; background-color: #1; border: 2px solid white; font-size: 16px;}</string>
        </property>
        <property name="text">
         <string>NEXT</string>
@@ -295,7 +297,7 @@ font-family: Lato;</string>
        </rect>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/conceal-small.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/aluisyo-small.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QGroupBox" name="box2">
@@ -395,7 +397,7 @@ font-size: 14px;</string>
 font-size: 14px;</string>
        </property>
        <property name="text">
-        <string>■  The developers have no access to your password or your keys, </string>
+        <string>■  The developers of Aluisyo have no access to your password, your keys, </string>
        </property>
       </widget>
       <widget class="QLabel" name="label_14">
@@ -417,7 +419,7 @@ font-size: 14px;</string>
 font-size: 20px;</string>
        </property>
        <property name="text">
-        <string>How does the Wallet work?</string>
+        <string>How does Aluisyo Wallet work?</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -438,7 +440,9 @@ font-size: 20px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: blue; background-color: #1; border: 1px solid blue; font-size: 16px;</string>
+        <string notr="true">QPushButton#next2 {color: white; background-color: #1; border: 1px solid white; font-size: 16px;}
+
+QPushButton#next2:hover {color: white; background-color: #1; border: 2px solid white; font-size: 16px;}</string>
        </property>
        <property name="text">
         <string>NEXT</string>
@@ -668,7 +672,7 @@ font-size: 14px;</string>
 font-size: 20px;</string>
        </property>
        <property name="text">
-        <string>only YOU are in control</string>
+        <string>Only YOU are in control</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -689,7 +693,9 @@ font-size: 20px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: orange; background-color: #1; border: 1px solid orange; font-size: 16px;</string>
+        <string notr="true">QPushButton#next3 {color: white; background-color: #1; border: 1px solid white; font-size: 16px;}
+
+QPushButton#next3:hover {color: white; background-color: #1; border: 2px solid white; font-size: 16px;}</string>
        </property>
        <property name="text">
         <string>NEXT</string>
@@ -802,7 +808,9 @@ font-size: 20px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: blue; background-color: #1; border: 1px solid blue; font-size: 13px;</string>
+        <string notr="true">QPushButton#pushButton {color: white; background-color: #1; border: 1px solid white; font-size: 13px;}
+
+QPushButton#pushButton:hover {color: white; background-color: #1; border: 2px solid white; font-size: 13px;}</string>
        </property>
        <property name="text">
         <string>CREATE NEW WALLET</string>
@@ -823,7 +831,9 @@ font-size: 20px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: blue; background-color: #1; border: 1px solid blue; font-size: 13px;</string>
+        <string notr="true">QPushButton#pushButton_2 {color: white; background-color: #1; border: 1px solid white; font-size: 13px;}
+
+QPushButton#pushButton_2:hover {color: white; background-color: #1; border: 2px solid white; font-size: 13px;}</string>
        </property>
        <property name="text">
         <string>OPEN EXISTING WALLET</string>
@@ -844,7 +854,9 @@ font-size: 20px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: #ddd; border: 2px solid #343a40; font-size: 13px; background-color: #21259;</string>
+        <string notr="true">QPushButton#spendkeyButton {color: #ccc; border: 1px solid #343a40; font-size: 13px; background-color: #21259;}
+
+QPushButton#spendkeyButton:hover {color: #ddd; border: 2px solid #444; font-size: 13px; background-color: #21259;}</string>
        </property>
        <property name="text">
         <string>IMPORT SPEND/VIEW KEYS</string>
@@ -865,7 +877,9 @@ font-size: 20px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: #ddd; border: 2px solid #343a40; font-size: 13px; background-color: #21259;</string>
+        <string notr="true">QPushButton#guikeyButton {color: #ccc; border: 1px solid #343a40; font-size: 13px; background-color: #21259;}
+
+QPushButton#guikeyButton:hover {color: #ddd; border: 2px solid #444; font-size: 13px; background-color: #21259;}</string>
        </property>
        <property name="text">
         <string>IMPORT GUI KEY</string>
@@ -886,7 +900,9 @@ font-size: 20px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: blue; background-color: #1; border: 1px solid blue; font-size: 13px;</string>
+        <string notr="true">QPushButton#seedButton {color: white; background-color: #1; border: 1px solid white; font-size: 13px;}
+
+QPushButton#seedButton:hover {color: white; background-color: #1; border: 2px solid white; font-size: 13px;}</string>
        </property>
        <property name="text">
         <string>IMPORT SEED</string>

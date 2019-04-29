@@ -1,5 +1,6 @@
 // Copyright (c) 2016 The Karbowanec developers
-// Copyright (c) 2018 The Circle Foundation
+// Copyright (c) 2018 The Circle Foundation & Conceal Devs
+// Copyright (c) 2018-2019 Conceal Network & Conceal Devs
 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -90,7 +91,7 @@ void Updater::replyFinished (QNetworkReply *reply)
          if (ourVersion < remoteVersion) {
 
              if (QMessageBox::warning(nullptr, QObject::tr("Aluisyo Wallet Update"), QObject::tr("There is an update to the wallet available.\nWould you like to go to the download page?"), QMessageBox::Ok, QMessageBox::Cancel) == QMessageBox::Ok) {
-                 QString link = "https://github.com/aluisyonetwork/aluisyo-wallet/releases";
+                 QString link = "https://github.com/aluisyoanx/gui-wallet/releases";
                  QDesktopServices::openUrl(QUrl(link));
              }
 

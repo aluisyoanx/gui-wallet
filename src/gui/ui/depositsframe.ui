@@ -105,7 +105,7 @@ background-color: #282d31;
 font-family: Lato;
     font-size: 13px;
     border: 0px solid white;
-border-bottom: 1px solid blue;
+border-bottom: 1px solid white;
    height: 30px;
 
 }
@@ -118,7 +118,7 @@ QTreeView::item
 }
 
 QTreeView::branch:selected {
-  background-color: blue;
+  background-color: white;
   color: black;
 }
 
@@ -164,7 +164,9 @@ QWidget:item:selected {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: #ddd; border: 2px solid #343a40; font-size: 16px;</string>
+       <string notr="true">QPushButton#m_backButton {color: #ccc; border: 1px solid #343a40; font-size: 16px; background-color: #21259;}
+
+QPushButton#m_backButton:hover {color: #ddd; border: 2px solid #444; font-size: 16px; background-color: #21259;}</string>
       </property>
       <property name="text">
        <string>BACK</string>
@@ -228,7 +230,9 @@ font-size: 22px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: blue; background-color: #1; border: 1px solid blue; font-size: 16px;</string>
+        <string notr="true">QPushButton#m_depositButton {color: white; background-color: #1; border: 1px solid white; font-size: 16px;}
+
+QPushButton#m_depositButton:hover {color: white; background-color: #1; border: 2px solid white; font-size: 16px;}</string>
        </property>
        <property name="text">
         <string>CREATE</string>
@@ -421,7 +425,7 @@ font-size: 22px;</string>
         <rect>
          <x>470</x>
          <y>100</y>
-         <width>181</width>
+         <width>311</width>
          <height>23</height>
         </rect>
        </property>
@@ -710,7 +714,9 @@ font-size: 22px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: blue; background-color: #1; border: 1px solid blue; font-size: 16px;</string>
+        <string notr="true">QPushButton#m_withdrawButton {color: white; background-color: #1; border: 1px solid white; font-size: 16px;}
+
+QPushButton#m_withdrawButton:hover {color: white; background-color: #1; border: 2px solid white; font-size: 16px;}</string>
        </property>
        <property name="text">
         <string>WITHDRAW</string>
@@ -731,7 +737,7 @@ font-size: 22px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: blue; font-size: 20px;</string>
+        <string notr="true">color: white; font-size: 20px;</string>
        </property>
        <property name="text">
         <string>Withdraw</string>
@@ -863,7 +869,7 @@ font-size: 22px;</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: blue;</string>
+        <string notr="true">background-color: white;</string>
        </property>
        <property name="text">
         <string/>
@@ -986,7 +992,7 @@ font-size: 22px;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: blue; background-color: #282d31; font-size: 18px;</string>
+       <string notr="true">color: white; background-color: #282d31; font-size: 18px;</string>
       </property>
       <property name="text">
        <string>NEW DEPOSIT</string>
@@ -1049,7 +1055,7 @@ font-size: 22px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: blue; background-color: #1; border: 1px solid blue; font-size: 16px;</string>
+        <string notr="true">color: white; background-color: #1; border: 1px solid white; font-size: 16px;</string>
        </property>
        <property name="text">
         <string>CREATE</string>
@@ -1251,7 +1257,7 @@ font-size: 22px;</string>
         <rect>
          <x>470</x>
          <y>100</y>
-         <width>181</width>
+         <width>311</width>
          <height>23</height>
         </rect>
        </property>
@@ -1398,7 +1404,7 @@ font-size: 22px;</string>
        </rect>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/conceal-small.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/images/aluisyo-small.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <zorder>m_depositView</zorder>

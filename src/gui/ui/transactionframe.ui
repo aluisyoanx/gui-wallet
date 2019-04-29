@@ -82,7 +82,7 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: blue; font-size: 12px;</string>
+       <string notr="true">color: white; font-size: 12px;</string>
       </property>
       <property name="text">
        <string>TextLabel</string>

@@ -141,7 +141,7 @@ color: #e5e5e5;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: #222; border-radius: 0px; border: 0px solid; background-color: blue;</string>
+       <string notr="true">color: #222; border-radius: 0px; border: 0px solid; background-color: white;</string>
       </property>
       <property name="text">
        <string>IMPORT</string>
@@ -163,7 +163,7 @@ color: #e5e5e5;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: #222; border-radius: 0px; border: 0px solid; background-color: blue;</string>
+       <string notr="true">color: #222; border-radius: 0px; border: 0px solid; background-color: white;</string>
       </property>
       <property name="text">
        <string>EXIT</string>

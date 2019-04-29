@@ -1,6 +1,8 @@
 // Copyright (c) 2011-2017 The Cryptonote developers
-// Copyright (c) 2018 The Circle Foundation
-// Copyright (c) 2018 The Circle Foundation
+// Copyright (c) 2018 The Circle Foundation & Conceal Devs
+// Copyright (c) 2018-2019 Conceal Network & Conceal Devs
+// Copyright (c) 2018 The Circle Foundation & Conceal Devs
+// Copyright (c) 2018-2019 Conceal Network & Conceal Devs
 // 
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -56,6 +58,7 @@ private:
   void payTo(const QModelIndex& _index);
   void sendTo();
   void delay();
+  void setRemoteWindowTitle();  
   void depositTo();
   void showQRCode(const QString& _address);
   void backupTo();
@@ -69,6 +72,7 @@ private:
   
   Q_SLOT void createWallet();
   Q_SLOT void openWallet();
+  Q_SLOT void closeWallet();
   Q_SLOT void importKey();
   Q_SLOT void importsecretkeys();
   Q_SLOT void importSeed();
