@@ -1,5 +1,5 @@
 # Aluisyo Wallet (GUI)
-Latest Release: v0.0.2
+Latest Release: v0.0.4
 Maintained by Aluisyo.
 
 ## Warning: This is Highly Experimental for testing purposes, Use at own Risk!
@@ -9,11 +9,7 @@ Maintained by Aluisyo.
 
 The Future Of Blockchain Banking
 
-Aluisyo is a decentralized cryptocurrency based on cryptonote with enabled blockchain banking features and secure messaging.
-
-Aluisyo is a fairly launched coin without any premine, ico or dev fee.
-
-Aluisyo is a complete Solution for your Payments, messaging and banking needs, it provides instant privacy protected transactions and untraceable/self-destructive encrypted messaging transfers with extremely low processing fees in a decentralized peer-to-peer network.
+Aluisyo is a decentralized cryptocurrency based on the cryptonote protocol. Aluisyo is the complete solution for your blockchain Banking, Payment, and Messaging needs. Aluisyo allows you to earn interest from depositing ANX into your Block-Length-Interest account. It also provides instant privacy protected peer-to-peer transactions as well as untraceable/self-destructive encrypted messaging, with extremely low processing fees in a decentralized network.
 
 - Coin Name: Aluisyo
 - Genesis Date: 25-02-19
@@ -32,9 +28,12 @@ Aluisyo is a complete Solution for your Payments, messaging and banking needs, i
 - Web: [aluisyo.network](https://aluisyo.network/)
 - GitHub: [https://github.com/aluisyoanx/aluisyo-core](https://github.com/aluisyoanx/aluisyo-core)
 - Discord: [https://discord.gg/rbyNZRz](https://discord.gg/rbyNZRz)
-- Our BitcoinTalk: https://bitcointalk.org/index.php?topic=5114934
-- Our Telegram: https://t.me/joinchat/I5RElgnalLDhSHTQBjSluA
-- Our Twitter: https://www.twitter.com/aluisyoanx
+- BitcoinTalk: https://bitcointalk.org/index.php?topic=5114934
+- Telegram: https://t.me/joinchat/I5RElgnalLDhSHTQBjSluA
+- Twitter: https://www.twitter.com/aluisyoanx
+- Facebook: https://www.facebook.com/aluisyoanx
+- Medium: https://medium.com/@aluisyoanx
+- Cryptunit: https://www.cryptunit.com/coin/ANX
 
 ### [Block Explorer] 
 - https://explorer.aluisyo.network/
@@ -67,8 +66,8 @@ Alternatively, it may be possible to install them using a package manager.
 To acquire the source via git and build the release version, run the following commands:
 
 - `cd ~`
-- `git clone https://github.com/aluisyoanx/aluisyo-wallet`
-- `cd aluisyo-wallet`
+- `git clone https://github.com/aluisyoanx/gui-wallet`
+- `cd gui-wallet`
 - `git clone https://github.com/aluisyoanx/aluisyo-core.git cryptonote`
 - `make build-release`
 - `mkdir bin && mv build/release/Aluisyo-GUI bin/`
@@ -91,9 +90,9 @@ If the build is successful the binaries will be in the bin folder.
 - From the start menu, open 'x64 Native Tools Command Prompt for vs2017' or run "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsMSBuildCmd.bat" from any command prompt.
 - Edit the CMakeLists.txt file and set the path to QT cmake folder. For example: set(CMAKE_PREFIX_PATH "C:\\Qt\\5.11.0\\msvc2017_64\\lib\\cmake\\").
 - `git clone https://github.com/aluisyoanx/aluisyo-core`
-- `git clone https://github.com/aluisyoanx/aluisyo-wallet`
-- Copy the contents of the aluisyo-core folder into aluisyo-wallet\cryptonote
-- `cd aluisyo-gui-wallet`
+- `git clone https://github.com/aluisyoanx/gui-wallet`
+- Copy the contents of the aluisyo-core folder into gui-wallet\cryptonote
+- `cd gui-wallet`
 - `mkdir build`
 - `cd build`
 - `cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..` (Or your boost installed dir.)
